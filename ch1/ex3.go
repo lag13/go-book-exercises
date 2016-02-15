@@ -33,7 +33,6 @@ func main() {
 
 func avgTime(fn timeFn, numRuns int) int64 {
 	var avgTime int64
-	avgTime = 0
 	for i := 0; i < numRuns; i++ {
 		avgTime += fn()
 	}
